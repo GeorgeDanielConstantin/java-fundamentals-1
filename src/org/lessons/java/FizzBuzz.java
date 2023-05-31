@@ -25,7 +25,7 @@ public class FizzBuzz {
                 System.out.println("Fizz");
             } else if (printNumber % 5 == 0 && printNumber % 3 != 0) {
                 System.out.println("Buzz");
-            } else if (printNumber % 3 == 0 && printNumber % 5 == 0) {
+            } else if (printNumber % 5 == 0 && printNumber % 3 == 0) {
                 System.out.println("FizzBuzz");
             } else {
                 System.out.println(printNumber);
