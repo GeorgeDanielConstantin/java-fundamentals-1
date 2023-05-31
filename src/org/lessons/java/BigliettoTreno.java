@@ -1,7 +1,7 @@
 package org.lessons.java;
 
-import java.util.Scanner;
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 
 public class BigliettoTreno {
@@ -23,13 +23,13 @@ public class BigliettoTreno {
         System.out.print("Età ");
         age = keyboardReader.nextInt();
 
-        if (age<18) {
+        if (age < 18) {
             finalPrice = (km * pricePerKm) * underageDiscount;
-        } else if (age>64) {
+        } else if (age > 64) {
             finalPrice = (km * pricePerKm) * overageDiscount;
         } else {
             finalPrice = km * pricePerKm;
         }
-        System.out.print("Il prezzo è :" + decimalFormat.format(finalPrice));
+        System.out.println("Il prezzo è : " + decimalFormat.format(finalPrice) + " euro");
     }
 }
